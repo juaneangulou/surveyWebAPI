@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -19,11 +18,12 @@ const store = configureStore(history, initialState);
 const rootElement = document.getElementById('root');
 
 ReactDOM.render(
-  <Provider store={store}>
+   <Provider store={store}>
     <ConnectedRouter history={history}>
       <App />
     </ConnectedRouter>
-  </Provider>,
+  </Provider>
+  ,
   rootElement);
 
 registerServiceWorker();
