@@ -1,10 +1,7 @@
 import axios from 'axios';
 import moment from 'moment';
 
-const myClients = axios.create({
-    baseURL: baseURL
-    
-});
+const myClients = axios.create();
 
 myClients.interceptors.request.use(function (config) {
     config.headers = {
